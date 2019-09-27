@@ -1,5 +1,6 @@
 pragma solidity ^0.5.8;
-pragma experimental ABIEncoderV2;
+/* Uncomment the following to get rid of compilation error */
+/* pragma experimental ABIEncoderV2; */
 
 /* contract AddrResolver is ResolverBase { */
 contract AddrResolver {

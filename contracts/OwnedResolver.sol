@@ -1,5 +1,6 @@
 pragma solidity ^0.5.0;
-pragma experimental ABIEncoderV2;
+/* Uncomment the following to get rid of compilation error */
+/* pragma experimental ABIEncoderV2; */
 
 import "./AddrResolver.sol";
 
