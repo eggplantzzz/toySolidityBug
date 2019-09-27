@@ -5,62 +5,6 @@
       "constant": true,
       "inputs": [
         {
-          "name": "interfaceID",
-          "type": "bytes4"
-        }
-      ],
-      "name": "supportsInterface",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "name": "coinType",
-          "type": "uint256"
-        }
-      ],
-      "name": "deleteAddress",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "node",
-          "type": "bytes32"
-        }
-      ],
-      "name": "addr",
-      "outputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
           "name": "node",
           "type": "bytes32"
         }
@@ -85,129 +29,27 @@
       "payable": false,
       "stateMutability": "view",
       "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "name": "coinType",
-          "type": "uint256"
-        },
-        {
-          "name": "a",
-          "type": "bytes"
-        }
-      ],
-      "name": "setAddress",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "name": "a",
-          "type": "address"
-        }
-      ],
-      "name": "setAddr",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "name": "coinType",
-          "type": "uint256"
-        }
-      ],
-      "name": "addr",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bytes"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "indexed": false,
-          "name": "a",
-          "type": "address"
-        }
-      ],
-      "name": "AddrChanged",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "node",
-          "type": "bytes32"
-        },
-        {
-          "indexed": false,
-          "name": "coinType",
-          "type": "uint256"
-        },
-        {
-          "indexed": false,
-          "name": "newAddress",
-          "type": "bytes"
-        }
-      ],
-      "name": "AddressChanged",
-      "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"},{\"name\":\"coinType\",\"type\":\"uint256\"}],\"name\":\"deleteAddress\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"}],\"name\":\"addr\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"}],\"name\":\"addresses\",\"outputs\":[{\"components\":[{\"name\":\"coinType\",\"type\":\"uint256\"},{\"name\":\"addr\",\"type\":\"bytes\"}],\"name\":\"\",\"type\":\"tuple[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"},{\"name\":\"coinType\",\"type\":\"uint256\"},{\"name\":\"a\",\"type\":\"bytes\"}],\"name\":\"setAddress\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"},{\"name\":\"a\",\"type\":\"address\"}],\"name\":\"setAddr\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"},{\"name\":\"coinType\",\"type\":\"uint256\"}],\"name\":\"addr\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"node\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"a\",\"type\":\"address\"}],\"name\":\"AddrChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"node\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"coinType\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"newAddress\",\"type\":\"bytes\"}],\"name\":\"AddressChanged\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"addr(bytes32)\":{\"params\":{\"node\":\"The ENS node to query.\"},\"return\":\"The associated address.\"},\"setAddr(bytes32,address)\":{\"params\":{\"a\":\"The address to set.\",\"node\":\"The node to update.\"}}}},\"userdoc\":{\"methods\":{\"addr(bytes32)\":{\"notice\":\"Returns the address associated with an ENS node.\"},\"setAddr(bytes32,address)\":{\"notice\":\"Sets the address associated with an ENS node. May only be called by the owner of that node in the ENS registry.\"}},\"notice\":\"A simple resolver anyone can use; only allows the owner of a node to set its address.\"}},\"settings\":{\"compilationTarget\":{\"/Users/tyler/projects/toySolidityBug/contracts/OwnedResolver.sol\":\"OwnedResolver\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tyler/projects/toySolidityBug/contracts/AddrResolver.sol\":{\"keccak256\":\"0x90b97b45c7f47dc5d9c93269b500af09ea5042196c4c1627e20e60e324c7eedb\",\"urls\":[\"bzzr://5b3e2f1ba0fde5a14a4f37105953cf0e3ae80f90885ce1e8b093f52b6a0f39f4\"]},\"/Users/tyler/projects/toySolidityBug/contracts/OwnedResolver.sol\":{\"keccak256\":\"0x70e294c58b458580693616323de3f80f8a8e34d004201bfe40fb682f7424857f\",\"urls\":[\"bzzr://8de999ea84af2427a52df3ce8d737599432e7e55ebfd47fd0a84f2ded275f4e1\"]},\"/Users/tyler/projects/toySolidityBug/contracts/ResolverBase.sol\":{\"keccak256\":\"0x225e1f37c2742847b91e34f76c4a51c8bc0bb25d0dc303ec1ce1d3be3ec8c446\",\"urls\":[\"bzzr://57d01d195ec59cfbfeba46615340165263893c1a7f8e39640a593719f7f6d022\"]}},\"version\":1}",
-  "bytecode": "0x",
-  "deployedBytecode": "0x",
-  "sourceMap": "",
-  "deployedSourceMap": "",
-  "source": "pragma solidity ^0.5.0;\n\nimport \"./AddrResolver.sol\";\n\n/**\n * A simple resolver anyone can use; only allows the owner of a node to set its\n * address.\n */\ncontract OwnedResolver is AddrResolver {\n    function isAuthorise(bytes32 node) internal view returns(bool) {\n      return true;\n    }\n}\n",
-  "sourcePath": "/Users/tyler/projects/toySolidityBug/contracts/OwnedResolver.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"node\",\"type\":\"bytes32\"}],\"name\":\"addresses\",\"outputs\":[{\"components\":[{\"name\":\"coinType\",\"type\":\"uint256\"},{\"name\":\"addr\",\"type\":\"bytes\"}],\"name\":\"\",\"type\":\"tuple[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"A simple resolver anyone can use; only allows the owner of a node to set its address.\"}},\"settings\":{\"compilationTarget\":{\"/Users/tyler/projects/toySolidityExample/contracts/OwnedResolver.sol\":\"OwnedResolver\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tyler/projects/toySolidityExample/contracts/AddrResolver.sol\":{\"keccak256\":\"0xe0addd45f79f5257b9b3c4558f33fdc4116ee1c4e396b13e17befd701393428d\",\"urls\":[\"bzzr://899db547a1c75ffd229d1b4783b53cff890237bbce68246b992f90a20fdc5849\"]},\"/Users/tyler/projects/toySolidityExample/contracts/OwnedResolver.sol\":{\"keccak256\":\"0x07c4e2469458751834f2e8cf5c38009417778fcf639ccac7fb0d1cef38d82b48\",\"urls\":[\"bzzr://eefa891847a949c87b2a7fbe590acdcfbac2b91272860438e29e942828887472\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103e6806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063699f200f14610030575b600080fd5b61004a60048036036100459190810190610192565b610060565b60405161005791906102c9565b60405180910390f35b6060600080838152602001908152602001600020805480602002602001604051908101604052809291908181526020016000905b82821015610172578382906000526020600020906002020160405180604001604052908160008201548152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561015a5780601f1061012f5761010080835404028352916020019161015a565b820191906000526020600020905b81548152906001019060200180831161013d57829003601f168201915b50505050508152505081526020019060010190610094565b505050509050919050565b60008135905061018c81610395565b92915050565b6000602082840312156101a457600080fd5b60006101b28482850161017d565b91505092915050565b60006101c7838361027d565b905092915050565b60006101da826102f8565b6101e4818561031b565b9350836020820285016101f6856102eb565b8060005b85811015610232578484038952815161021385826101bb565b945061021e8361030e565b925060208a019950506001810190506101fa565b50829750879550505050505092915050565b600061024f82610303565b610259818561032c565b9350610269818560208601610351565b61027281610384565b840191505092915050565b600060408301600083015161029560008601826102ba565b50602083015184820360208601526102ad8282610244565b9150508091505092915050565b6102c381610347565b82525050565b600060208201905081810360008301526102e381846101cf565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b6000819050919050565b6000819050919050565b60005b8381101561036f578082015181840152602081019050610354565b8381111561037e576000848401525b50505050565b6000601f19601f8301169050919050565b61039e8161033d565b81146103a957600080fd5b5056fea265627a7a72305820ec6f33d71386e0889ace4126a5f22e86616378799a8238bcf05e63ff233ce5846c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063699f200f14610030575b600080fd5b61004a60048036036100459190810190610192565b610060565b60405161005791906102c9565b60405180910390f35b6060600080838152602001908152602001600020805480602002602001604051908101604052809291908181526020016000905b82821015610172578382906000526020600020906002020160405180604001604052908160008201548152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561015a5780601f1061012f5761010080835404028352916020019161015a565b820191906000526020600020905b81548152906001019060200180831161013d57829003601f168201915b50505050508152505081526020019060010190610094565b505050509050919050565b60008135905061018c81610395565b92915050565b6000602082840312156101a457600080fd5b60006101b28482850161017d565b91505092915050565b60006101c7838361027d565b905092915050565b60006101da826102f8565b6101e4818561031b565b9350836020820285016101f6856102eb565b8060005b85811015610232578484038952815161021385826101bb565b945061021e8361030e565b925060208a019950506001810190506101fa565b50829750879550505050505092915050565b600061024f82610303565b610259818561032c565b9350610269818560208601610351565b61027281610384565b840191505092915050565b600060408301600083015161029560008601826102ba565b50602083015184820360208601526102ad8282610244565b9150508091505092915050565b6102c381610347565b82525050565b600060208201905081810360008301526102e381846101cf565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b6000819050919050565b6000819050919050565b60005b8381101561036f578082015181840152602081019050610354565b8381111561037e576000848401525b50505050565b6000601f19601f8301169050919050565b61039e8161033d565b81146103a957600080fd5b5056fea265627a7a72305820ec6f33d71386e0889ace4126a5f22e86616378799a8238bcf05e63ff233ce5846c6578706572696d656e74616cf50037",
+  "sourceMap": "189:137:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;189:137:1;;;;;;;",
+  "deployedSourceMap": "189:137:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;189:137:1;;;;;;;;;;;;;;;;;;;258:117:0;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;313:20;352:10;:16;363:4;352:16;;;;;;;;;;;345:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;258:117;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:241;;246:2;234:9;225:7;221:23;217:32;214:2;;;262:1;259;252:12;214:2;297:1;314:53;359:7;350:6;339:9;335:22;314:53;;;304:63;;276:97;208:175;;;;;391:245;;536:94;626:3;618:6;536:94;;;522:108;;515:121;;;;;723:1024;;912:76;982:5;912:76;;;1001:108;1102:6;1097:3;1001:108;;;994:115;;1132:3;1174:4;1166:6;1162:17;1157:3;1153:27;1201:78;1273:5;1201:78;;;1299:7;1327:1;1312:396;1337:6;1334:1;1331:13;1312:396;;;1399:9;1393:4;1389:20;1384:3;1377:33;1444:6;1438:13;1466:108;1569:4;1554:13;1466:108;;;1458:116;;1591:82;1666:6;1591:82;;;1581:92;;1696:4;1691:3;1687:14;1680:21;;1369:339;1359:1;1356;1352:9;1347:14;;1312:396;;;1316:14;1721:4;1714:11;;1738:3;1731:10;;891:856;;;;;;;;;;1755:315;;1851:34;1879:5;1851:34;;;1897:60;1950:6;1945:3;1897:60;;;1890:67;;1962:52;2007:6;2002:3;1995:4;1988:5;1984:16;1962:52;;;2035:29;2057:6;2035:29;;;2030:3;2026:39;2019:46;;1831:239;;;;;;2150:555;;2289:4;2284:3;2280:14;2376:3;2369:5;2365:15;2359:22;2387:62;2444:3;2439;2435:13;2421:12;2387:62;;;2309:146;2528:4;2521:5;2517:16;2511:23;2580:3;2574:4;2570:14;2563:4;2558:3;2554:14;2547:38;2600:67;2662:4;2648:12;2600:67;;;2592:75;;2465:214;2696:4;2689:11;;2262:443;;;;;;2712:103;2785:24;2803:5;2785:24;;;2780:3;2773:37;2767:48;;;2822:449;;3034:2;3023:9;3019:18;3011:26;;3084:9;3078:4;3074:20;3070:1;3059:9;3055:17;3048:47;3109:152;3256:4;3247:6;3109:152;;;3101:160;;3005:266;;;;;3281:145;;3413:4;3405:6;3401:17;3390:28;;3381:45;;;;3436:129;;3554:5;3548:12;3538:22;;3532:33;;;;3572:87;;3648:5;3642:12;3632:22;;3626:33;;;;3668:146;;3802:4;3794:6;3790:17;3779:28;;3771:43;;;;3824:200;;3976:6;3971:3;3964:19;4013:4;4008:3;4004:14;3989:29;;3957:67;;;;;4033:152;;4137:6;4132:3;4125:19;4174:4;4169:3;4165:14;4150:29;;4118:67;;;;;4193:72;;4255:5;4244:16;;4238:27;;;;4272:72;;4334:5;4323:16;;4317:27;;;;4352:268;4417:1;4424:101;4438:6;4435:1;4432:13;4424:101;;;4514:1;4509:3;4505:11;4499:18;4495:1;4490:3;4486:11;4479:39;4460:2;4457:1;4453:10;4448:15;;4424:101;;;4540:6;4537:1;4534:13;4531:2;;;4605:1;4596:6;4591:3;4587:16;4580:27;4531:2;4401:219;;;;;4628:97;;4716:2;4712:7;4707:2;4700:5;4696:14;4692:28;4682:38;;4676:49;;;;4733:117;4802:24;4820:5;4802:24;;;4795:5;4792:35;4782:2;;4841:1;4838;4831:12;4782:2;4776:74;",
+  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nimport \"./AddrResolver.sol\";\n\n/**\n * A simple resolver anyone can use; only allows the owner of a node to set its\n * address.\n */\ncontract OwnedResolver is AddrResolver {\n    function isAuthorised(bytes32 node) internal view returns(bool) {\n      return true;\n    }\n}\n",
+  "sourcePath": "/Users/tyler/projects/toySolidityExample/contracts/OwnedResolver.sol",
   "ast": {
-    "absolutePath": "/Users/tyler/projects/toySolidityBug/contracts/OwnedResolver.sol",
+    "absolutePath": "/Users/tyler/projects/toySolidityExample/contracts/OwnedResolver.sol",
     "exportedSymbols": {
       "OwnedResolver": [
-        344
+        43
       ]
     },
-    "id": 345,
+    "id": 44,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 330,
+        "id": 28,
         "literals": [
           "solidity",
           "^",
@@ -218,13 +60,22 @@
         "src": "0:23:1"
       },
       {
-        "absolutePath": "/Users/tyler/projects/toySolidityBug/contracts/AddrResolver.sol",
+        "id": 29,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:1"
+      },
+      {
+        "absolutePath": "/Users/tyler/projects/toySolidityExample/contracts/AddrResolver.sol",
         "file": "./AddrResolver.sol",
-        "id": 331,
+        "id": 30,
         "nodeType": "ImportDirective",
-        "scope": 345,
-        "sourceUnit": 329,
-        "src": "25:28:1",
+        "scope": 44,
+        "sourceUnit": 27,
+        "src": "59:28:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -234,55 +85,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 332,
+              "id": 31,
               "name": "AddrResolver",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 328,
-              "src": "181:12:1",
+              "referencedDeclaration": 26,
+              "src": "215:12:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AddrResolver_$328",
+                "typeIdentifier": "t_contract$_AddrResolver_$26",
                 "typeString": "contract AddrResolver"
               }
             },
-            "id": 333,
+            "id": 32,
             "nodeType": "InheritanceSpecifier",
-            "src": "181:12:1"
+            "src": "215:12:1"
           }
         ],
         "contractDependencies": [
-          328,
-          413
+          26
         ],
         "contractKind": "contract",
         "documentation": "A simple resolver anyone can use; only allows the owner of a node to set its\naddress.",
-        "fullyImplemented": false,
-        "id": 344,
+        "fullyImplemented": true,
+        "id": 43,
         "linearizedBaseContracts": [
-          344,
-          328,
-          413
+          43,
+          26
         ],
         "name": "OwnedResolver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 342,
+              "id": 41,
               "nodeType": "Block",
-              "src": "263:26:1",
+              "src": "298:26:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 340,
+                    "id": 39,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "278:4:1",
+                    "src": "313:4:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -290,31 +139,31 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 339,
-                  "id": 341,
+                  "functionReturnParameters": 38,
+                  "id": 40,
                   "nodeType": "Return",
-                  "src": "271:11:1"
+                  "src": "306:11:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 343,
+            "id": 42,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "isAuthorise",
+            "name": "isAuthorised",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 336,
+              "id": 35,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 335,
+                  "id": 34,
                   "name": "node",
                   "nodeType": "VariableDeclaration",
-                  "scope": 343,
-                  "src": "221:12:1",
+                  "scope": 42,
+                  "src": "256:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -322,10 +171,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 334,
+                    "id": 33,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "221:7:1",
+                    "src": "256:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -335,19 +184,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "220:14:1"
+              "src": "255:14:1"
             },
             "returnParameters": {
-              "id": 339,
+              "id": 38,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 338,
+                  "id": 37,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 343,
-                  "src": "257:4:1",
+                  "scope": 42,
+                  "src": "292:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -355,10 +204,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 337,
+                    "id": 36,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "257:4:1",
+                    "src": "292:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -368,33 +217,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "256:6:1"
+              "src": "291:6:1"
             },
-            "scope": 344,
-            "src": "200:89:1",
+            "scope": 43,
+            "src": "234:90:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 345,
-        "src": "155:136:1"
+        "scope": 44,
+        "src": "189:137:1"
       }
     ],
-    "src": "0:292:1"
+    "src": "0:327:1"
   },
   "legacyAST": {
-    "absolutePath": "/Users/tyler/projects/toySolidityBug/contracts/OwnedResolver.sol",
+    "absolutePath": "/Users/tyler/projects/toySolidityExample/contracts/OwnedResolver.sol",
     "exportedSymbols": {
       "OwnedResolver": [
-        344
+        43
       ]
     },
-    "id": 345,
+    "id": 44,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 330,
+        "id": 28,
         "literals": [
           "solidity",
           "^",
@@ -405,13 +254,22 @@
         "src": "0:23:1"
       },
       {
-        "absolutePath": "/Users/tyler/projects/toySolidityBug/contracts/AddrResolver.sol",
+        "id": 29,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:1"
+      },
+      {
+        "absolutePath": "/Users/tyler/projects/toySolidityExample/contracts/AddrResolver.sol",
         "file": "./AddrResolver.sol",
-        "id": 331,
+        "id": 30,
         "nodeType": "ImportDirective",
-        "scope": 345,
-        "sourceUnit": 329,
-        "src": "25:28:1",
+        "scope": 44,
+        "sourceUnit": 27,
+        "src": "59:28:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -421,55 +279,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 332,
+              "id": 31,
               "name": "AddrResolver",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 328,
-              "src": "181:12:1",
+              "referencedDeclaration": 26,
+              "src": "215:12:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AddrResolver_$328",
+                "typeIdentifier": "t_contract$_AddrResolver_$26",
                 "typeString": "contract AddrResolver"
               }
             },
-            "id": 333,
+            "id": 32,
             "nodeType": "InheritanceSpecifier",
-            "src": "181:12:1"
+            "src": "215:12:1"
           }
         ],
         "contractDependencies": [
-          328,
-          413
+          26
         ],
         "contractKind": "contract",
         "documentation": "A simple resolver anyone can use; only allows the owner of a node to set its\naddress.",
-        "fullyImplemented": false,
-        "id": 344,
+        "fullyImplemented": true,
+        "id": 43,
         "linearizedBaseContracts": [
-          344,
-          328,
-          413
+          43,
+          26
         ],
         "name": "OwnedResolver",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 342,
+              "id": 41,
               "nodeType": "Block",
-              "src": "263:26:1",
+              "src": "298:26:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 340,
+                    "id": 39,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "278:4:1",
+                    "src": "313:4:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -477,31 +333,31 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 339,
-                  "id": 341,
+                  "functionReturnParameters": 38,
+                  "id": 40,
                   "nodeType": "Return",
-                  "src": "271:11:1"
+                  "src": "306:11:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 343,
+            "id": 42,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "isAuthorise",
+            "name": "isAuthorised",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 336,
+              "id": 35,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 335,
+                  "id": 34,
                   "name": "node",
                   "nodeType": "VariableDeclaration",
-                  "scope": 343,
-                  "src": "221:12:1",
+                  "scope": 42,
+                  "src": "256:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -509,10 +365,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 334,
+                    "id": 33,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "221:7:1",
+                    "src": "256:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -522,19 +378,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "220:14:1"
+              "src": "255:14:1"
             },
             "returnParameters": {
-              "id": 339,
+              "id": 38,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 338,
+                  "id": 37,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 343,
-                  "src": "257:4:1",
+                  "scope": 42,
+                  "src": "292:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -542,10 +398,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 337,
+                    "id": 36,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "257:4:1",
+                    "src": "292:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -555,20 +411,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "256:6:1"
+              "src": "291:6:1"
             },
-            "scope": 344,
-            "src": "200:89:1",
+            "scope": 43,
+            "src": "234:90:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 345,
-        "src": "155:136:1"
+        "scope": 44,
+        "src": "189:137:1"
       }
     ],
-    "src": "0:292:1"
+    "src": "0:327:1"
   },
   "compiler": {
     "name": "solc",
@@ -576,32 +432,12 @@
   },
   "networks": {},
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-25T22:03:07.050Z",
+  "updatedAt": "2019-09-27T13:15:42.790Z",
   "devdoc": {
-    "methods": {
-      "addr(bytes32)": {
-        "params": {
-          "node": "The ENS node to query."
-        },
-        "return": "The associated address."
-      },
-      "setAddr(bytes32,address)": {
-        "params": {
-          "a": "The address to set.",
-          "node": "The node to update."
-        }
-      }
-    }
+    "methods": {}
   },
   "userdoc": {
-    "methods": {
-      "addr(bytes32)": {
-        "notice": "Returns the address associated with an ENS node."
-      },
-      "setAddr(bytes32,address)": {
-        "notice": "Sets the address associated with an ENS node. May only be called by the owner of that node in the ENS registry."
-      }
-    },
+    "methods": {},
     "notice": "A simple resolver anyone can use; only allows the owner of a node to set its address."
   }
 }
